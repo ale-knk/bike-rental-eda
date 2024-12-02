@@ -1,0 +1,49 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pybike"
+
+version = "0.1.0"
+
+description = "A python package EDA over a bike sharing system."
+
+readme = "README.md"
+
+license = { text = "MIT" }
+
+authors = [
+    { name = "Alejandro Requena Bermejo", email = "rb.jandro@gmail.com" }
+]
+
+dependencies = [
+    "dash==2.18.2",
+    "joblib==1.4.2",
+    "matplotlib==3.9.2",
+    "pandas==2.2.3",
+    "plotly==5.24.1",
+    "pydantic==2.9.2",
+    "scikit-learn==1.5.2",
+    "scipy==1.14.1",
+    "polars==1.10.0",
+    "numpy==2.1.2",
+    "python-dotenv==1.0.1",
+    "nbformat==5.10.4"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Repository" = "https://github.com/ale-knk/bike-rental-eda"
+
+[tool.setuptools.packages.find]
+include = ["pybike"]
+exclude = ["data", "output"]
